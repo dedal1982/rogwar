@@ -37,6 +37,13 @@ p {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
 }
+.container {
+  width: 100%;
+  padding-left: 144px;
+  padding-right: 144px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
 }
 /*---header---*/
@@ -135,4 +142,12 @@ p {
   .header__burger.active span {
     transform: scale(0);
   }
+}
+/*---content---*/
+.content {
+  width: 100%;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: column;
 }
