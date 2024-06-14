@@ -167,7 +167,7 @@ button {
   flex-direction: column;
   padding-top: 63px;
   box-sizing: border-box;
-  border-bottom: 2px solid #e6e6e6;
+  gap: 30px;
 }
 .content__title {
   font-family: "Newsreader", serif;
@@ -176,4 +176,5 @@ button {
   line-height: 76.8px;
   letter-spacing: -0.08rem;
   color: #000000;
+  border-bottom: 2px solid #e6e6e6;
 }
