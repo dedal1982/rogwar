@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
 * {
   margin: 0;
@@ -24,6 +25,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
 /*---page---*/
 .page {
   background: azure;
@@ -37,7 +39,7 @@ button {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: "Newsreader", serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -60,8 +62,10 @@ button {
 .header__wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
-  padding: 41px 10px 10px 96px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 41px 21px 10px 96px;
+  box-sizing: border-box;
 }
 .header__logo {
   width: 290px;
@@ -71,8 +75,22 @@ button {
   font-size: 32px;
   line-height: 32px;
   color: #426b1f;
+  text-align: center;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-transform: uppercase;
+  color: #000000;
 }
 .header__burger {
   display: none;
