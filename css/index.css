@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,14 @@ h6,
 p {
   margin: 0;
 }
+button {
+  border: none;
+  cursor: pointer;
+}
 /*---page---*/
+.page {
+  background: azure;
+}
 .page.lock {
   overflow: hidden;
 }
@@ -30,7 +37,7 @@ p {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Newsreader", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -39,8 +46,8 @@ p {
 }
 .container {
   width: 100%;
-  padding-left: 144px;
-  padding-right: 144px;
+  padding-left: 96px;
+  padding-right: 96px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -54,28 +61,18 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 30px;
-  box-sizing: border-box;
-}
-@media screen and (max-width: 768px) {
-  .header__wrapper {
-    justify-content: space-between;
-    padding: 20px 10px;
-  }
+  padding: 41px 10px 10px 96px;
 }
 .header__logo {
-  font-size: 27px;
+  width: 290px;
+  height: 64px;
+  font-family: "Newsreader", serif;
   font-weight: 500;
-  background-image: linear-gradient(315deg, #445aff, #9f2727, #444aff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-size: 32px;
+  line-height: 32px;
+  color: #426b1f;
 }
 @media screen and (max-width: 767px) {
-  .header__logo {
-    font-size: 20px;
-  }
 }
 .header__burger {
   display: none;
