@@ -58,11 +58,6 @@
   color: #ffffff;
   pointer-events: none;
 }
-.m-pubg__inner {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 370px));
-  gap: 10px;
-}
 .m-pubg__nav-items {
   display: flex;
   align-items: center;
@@ -99,4 +94,11 @@
 .m-pubg__subscribe:hover {
   color: #000000;
   border: 1px solid #000000;
+}
+.m-pubg__inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 370px));
+  gap: 10px;
+}
+.m-pubg__item {
 }
