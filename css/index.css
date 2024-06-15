@@ -88,21 +88,22 @@ button {
   }
 }
 .header__logo {
-  width: 290px;
-  height: 64px;
+  max-width: 290px;
+  width: 100%;
   font-family: "Newsreader", serif;
   font-weight: 500;
   font-size: 32px;
-  line-height: 32px;
   color: #426b1f;
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .header__logo {
-    width: fit-content;
+    max-width: 200px;
+    font-size: 22px;
   }
 }
+
 .header__nav {
   display: flex;
   align-items: center;
@@ -225,8 +226,7 @@ button {
   display: flex;
   flex-direction: column;
   border-radius: 24px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .games__image {
   width: 100%;
@@ -268,4 +268,8 @@ button {
 .footer__icon {
   width: 32px;
   height: 32px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__icon:hover {
+  filter: brightness(80%);
 }
