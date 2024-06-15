@@ -205,20 +205,24 @@ button {
   padding-top: 63px;
   padding-bottom: 63px;
   box-sizing: border-box;
-  gap: 30px;
+  gap: 47px;
 }
 .games__title {
   font-family: "Newsreader", serif;
   font-weight: 400;
   font-size: 64px;
-  line-height: 76.8px;
   letter-spacing: -0.08rem;
   color: #000000;
   border-bottom: 2px solid #e6e6e6;
 }
+@media screen and (max-width: 900px) {
+  .games__title {
+    font-size: 40px;
+  }
+}
 .games__inner {
   display: flex;
-  gap: 13px;
+  gap: 20px;
 }
 .games__item {
   width: 303px;
