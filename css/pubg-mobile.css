@@ -167,6 +167,12 @@
   color: #f27a1a;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 600px) {
+  .m-pubg__price-btn {
+    background: #f27a1a;
+    color: #ffffff;
+  }
+}
 .m-pubg__price-btn:hover {
   background: #f27a1a;
   color: #ffffff;
