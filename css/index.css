@@ -255,6 +255,9 @@ button {
   box-sizing: border-box;
 }
 .footer__copyright {
-  display: flex;
-  color: #ffffff;
+  color: #dee2e6;
+}
+.footer__icon {
+  width: 32px;
+  height: 32px;
 }
