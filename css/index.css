@@ -207,6 +207,12 @@ button {
   box-sizing: border-box;
   gap: 47px;
 }
+@media screen and (max-width: 768px) {
+  .games__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .games__title {
   font-family: "Newsreader", serif;
   font-weight: 400;
@@ -223,6 +229,17 @@ button {
 .games__inner {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 830px) {
+  .games__inner {
+    overflow: auto;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 24px;
+  }
+  .games__inner::-webkit-scrollbar {
+    width: 0;
+  }
 }
 .games__item {
   width: 303px;
