@@ -105,12 +105,40 @@
   height: 368px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 .m-pubg__image {
   height: 314px;
 }
 .m-pubg__price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.m-pubg__price-us {
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+}
+.m-pubg__price-rub {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f27a1a;
+}
+.m-pubg__price-btn {
+  width: 100%;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #f27a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #f27a1a;
+  transition: all 0.3s ease-in-out;
+}
+.m-pubg__price-btn:hover {
+  background: #f27a1a;
+  color: #ffffff;
 }
