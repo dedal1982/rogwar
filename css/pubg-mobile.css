@@ -97,14 +97,16 @@
 }
 .m-pubg__inner {
   display: grid;
-  grid-template-columns: repeat(4, minmax(auto, 370px));
+  grid-template-columns: repeat(4, minmax(auto, auto));
   gap: 10px;
 }
 .m-pubg__item {
-  width: 303px;
-  height: 368px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .m-pubg__image {
   height: 314px;
@@ -125,6 +127,14 @@
   font-weight: 700;
   font-size: 20px;
   color: #f27a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.m-pubg__price-through {
+  text-decoration: line-through;
+  color: #333;
 }
 .m-pubg__price-btn {
   width: 100%;
