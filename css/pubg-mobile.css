@@ -42,20 +42,15 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(24, 3, 210, 0.4),
-    transparent
-  );
+  background: #ffce00;
   transition: all 650ms;
 }
 .nav-btn:hover:before {
   left: 100%;
 }
 .nav-btn.active {
-  background: rgba(24, 3, 210, 0.4);
-  color: #ffffff;
+  background: #ffce00;
+  /* color: #ffffff; */
   pointer-events: none;
 }
 .nav-items {
@@ -121,64 +116,113 @@
     margin: 0 auto;
   }
 }
-.m-pubg__item {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+.card {
+  position: relative;
+  height: 460px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.m-pubg__image {
-  height: 330px;
-}
-.m-pubg__price {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-.m-pubg__price-us {
-  font-size: 16px;
-  color: #8a8282;
-  font-weight: 700;
-}
-.m-pubg__price-rub {
-  font-weight: 700;
-  font-size: 20px;
-  color: #f27a1a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.m-pubg__price-through {
-  text-decoration: line-through;
-  color: #333;
-  font-weight: 500;
-}
-.m-pubg__price-btn {
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
   width: 100%;
-  height: 32px;
-  border-radius: 3px;
-  border: 1px solid #f27a1a;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "CORSAIR";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #f27a1a;
-  transition: all 0.3s ease-in-out;
+  letter-spacing: 1px;
 }
-@media screen and (max-width: 600px) {
-  .m-pubg__price-btn {
-    background: #f27a1a;
-    color: #ffffff;
-  }
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 5px;
 }
-.m-pubg__price-btn:hover {
-  background: #f27a1a;
-  color: #ffffff;
+.price span {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #ffce00;
+}
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+  border-radius: 20px;
 }
