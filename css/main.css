@@ -126,8 +126,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .header__link:hover {
-  background: rgba(24, 3, 210, 0.4);
-  color: #ffffff;
+  background: #ffce00;
 }
 .header__burger {
   display: none;
