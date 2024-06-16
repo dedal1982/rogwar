@@ -15,12 +15,12 @@
     padding-bottom: 30px;
   }
 }
-.m-pubg__nav {
+.nav {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.m-pubg__nav-btn {
+.nav-btn {
   width: 150px;
   height: 35px;
   display: flex;
@@ -35,7 +35,7 @@
   overflow: hidden;
   border-radius: 5px;
 }
-.m-pubg__nav-btn:before {
+.nav-btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -50,20 +50,25 @@
   );
   transition: all 650ms;
 }
-.m-pubg__nav-btn:hover:before {
+.nav-btn:hover:before {
   left: 100%;
 }
-.m-pubg__nav-btn.active {
+.nav-btn.active {
   background: rgba(24, 3, 210, 0.4);
   color: #ffffff;
   pointer-events: none;
 }
-.m-pubg__nav-items {
+.nav-items {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.m-pubg__line {
+@media screen and (max-width: 600px) {
+  .nav-items {
+    margin: 0 auto;
+  }
+}
+.nav-line {
   height: 1px;
   background-color: rgb(4, 4, 239);
   width: 80%;
@@ -71,11 +76,11 @@
   margin-right: 15px;
 }
 @media screen and (max-width: 767px) {
-  .m-pubg__line {
+  .nav-line {
     display: none;
   }
 }
-.m-pubg__subscribe {
+.nav-subscribe {
   color: rgb(4, 4, 239);
   background: transparent;
   display: flex;
@@ -87,11 +92,11 @@
   box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
-  .m-pubg__subscribe {
+  .nav-subscribe {
     display: none;
   }
 }
-.m-pubg__subscribe:hover {
+.nav-subscribe:hover {
   color: #000000;
   border: 1px solid #000000;
 }
