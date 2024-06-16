@@ -87,7 +87,7 @@
 }
 .card {
   position: relative;
-  height: 460px;
+  height: 380px;
   background: #191919;
   border-radius: 20px;
   overflow: hidden;
@@ -128,18 +128,7 @@
   padding-top: 20px;
   z-index: 1;
 }
-/*
-.card .imgBox img {
-    max-width: 100%;
-    
-    transition: .5s;
-}
 
-.card:hover .imgBox img {
-    max-width: 50%;
-      
-}
-*/
 .card .contentBox {
   position: relative;
   padding: 20px;
@@ -191,7 +180,8 @@
 }
 
 .mouse {
-  height: 300px;
+  height: 210px;
   width: auto;
   border-radius: 20px;
+  border: 2px solid #ffce00;
 }
